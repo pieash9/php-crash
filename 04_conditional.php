@@ -1,22 +1,19 @@
 <?php 
 
-$t = date("H");
+$favColor = 'red';
 
-if($t < 12){
-    echo "Good Morning";
-} elseif($t < 18){
-    echo "Good Afternoon";
-} else {
-    echo "Good Evening";
+switch ($favColor) {
+    case 'red':
+        echo "your fav color is red";
+        break;
+
+    case 'blue':
+        echo "your fav color is blue";
+        break;
+    default:
+        echo "your fav color is not red or blue";
+        break;
 }
-
-
-
-
-
-
-
-
 
 
 ?>
